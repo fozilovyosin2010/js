@@ -55,3 +55,8 @@ let calc = (value) => {
   return c;
 };
 console.log(calc(5));
+// task#10
+function deference(a, b, c) {
+  console.log(a && b !== c ? c : b && c !== a ? a : a && c !== b ? b : null);
+}
+deference(897, 897, 2);
