@@ -67,3 +67,15 @@ deference(897, 897, 2);
 // task#12
 
 // not solved
+
+// task#13
+
+// unsolved
+
+//  task#14
+
+// unsolved
+
+//  task#15
+
+// unsolved
