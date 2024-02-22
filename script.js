@@ -60,3 +60,14 @@ function deference(a, b, c) {
   console.log(a && b !== c ? c : b && c !== a ? a : a && c !== b ? b : null);
 }
 deference(897, 897, 2);
+// task#11
+let resEven = function (num1, num2) {
+  console.log(
+    num1 && num2 > 0
+      ? "negative nums pls"
+      : num1 && num2 < 0 && (num1 + num2) % 2 == 0
+      ? (num1 + num2) / 2
+      : 0
+  );
+};
+resEven(-1, -1);
