@@ -43,3 +43,15 @@ function same(a, b, c) {
 same(8, 1, 0);
 
 // task#8
+
+// unsolved
+
+// task#9
+let calc = (value) => {
+  let c = 0;
+  for (let i = 0; i <= value; i++) {
+    c += i;
+  }
+  return c;
+};
+console.log(calc(5));
