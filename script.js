@@ -62,22 +62,22 @@
 // deference(897, 897, 2);
 // task#11
 
-function evenNum(a, b) {
-  let c = 0;
-  for (let i = a; i >= b; i--) {
-    if (i % 2 === 0) {
-      c += i;
-    }
-  }
-  for (let i = a; i <= b; i++) {
-    if (i % 2 === 0) {
-      c += i;
-    }
-  }
+// function evenNum(a, b) {
+//   let c = 0;
+//   for (let i = a; i >= b; i--) {
+//     if (i % 2 === 0) {
+//       c += i;
+//     }
+//   }
+//   for (let i = a; i <= b; i++) {
+//     if (i % 2 === 0) {
+//       c += i;
+//     }
+//   }
 
-  return c;
-}
-console.log(evenNum(-14, -18));
+//   return c;
+// }
+// console.log(evenNum(-14, -18));
 
 // task#12
 // let sum = (n, k) => {
@@ -106,8 +106,6 @@ console.log(evenNum(-14, -18));
 
 //   return max;
 // }
-
-// unsolved
 
 //  task#14
 
