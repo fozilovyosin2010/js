@@ -62,35 +62,54 @@
 // deference(897, 897, 2);
 // task#11
 
-//Your code
+function evenNum(a, b) {
+  let c = 0;
+  for (let i = a; i >= b; i--) {
+    if (i % 2 === 0) {
+      c += i;
+    }
+  }
+  for (let i = a; i <= b; i++) {
+    if (i % 2 === 0) {
+      c += i;
+    }
+  }
 
-console.log(eventNum(-5, -3));
-console.log(eventNum(-1, -1));
-console.log(eventNum(-14, -18));
-
-// not solved
+  return c;
+}
+console.log(evenNum(-14, -18));
 
 // task#12
-let sum = (n, k) => {
-  let c = 0;
-  for (let i = 1; i <= n; i++) {
-    c += Math.pow(i, k);
-  }
-  return c;
-};
-console.log(sum(5, 3));
-console.log(sum(1, 1));
-console.log(sum(4, 3));
-
-// not solved
+// let sum = (n, k) => {
+//   let c = 0;
+//   for (let i = 1; i <= n; i++) {
+//     c += Math.pow(i, k);
+//   }
+//   return c;
+// };
+// console.log(sum(5, 3));
+// console.log(sum(1, 1));
+// console.log(sum(4, 3));
 
 // task#13
+// console.log(maxNum(7192));
+// function maxNum(num) {
+//   let max = -12312312,
+//     sum = 0;
+
+//   for (let i = num; i >= 1; parseInt((i /= 10))) {
+//     sum = parseInt(i % 10);
+//     if (sum > max) {
+//       max = sum;
+//     }
+//   }
+
+//   return max;
+// }
 
 // unsolved
 
 //  task#14
-
-// unsolved
 
 //  task#15
 
