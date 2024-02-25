@@ -43,14 +43,14 @@
 // same(8, 1, 0);
 
 // task#8
-// let largestSwap = function (number) {
-//   let c = "";
-//   for (let i = number; i >= 1; parseInt((i /= 10))) {
-//     c += parseInt(i % 10);
-//   }
-//   return c < number ? true : false;
-// };
-// console.log(largestSwap(53));
+let largestSwap = function (number) {
+  let c = "";
+  for (let i = number; i >= 1; parseInt((i /= 10))) {
+    c += parseInt(i % 10);
+  }
+  return c < number ? true : false;
+};
+console.log(largestSwap(53));
 // task#9
 // let calc = (value) => {
 //   let c = 0;
