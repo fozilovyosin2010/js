@@ -43,14 +43,14 @@
 // same(8, 1, 0);
 
 // task#8
-let largestSwap = function (number) {
-  let c = "";
-  for (let i = number; i >= 1; parseInt((i /= 10))) {
-    c += parseInt(i % 10);
-  }
-  return c < number ? true : false;
-};
-console.log(largestSwap(53));
+// let largestSwap = function (number) {
+//   let c = "";
+//   for (let i = number; i >= 1; parseInt((i /= 10))) {
+//     c += parseInt(i % 10);
+//   }
+//   return c < number ? true : false;
+// };
+// console.log(largestSwap(53));
 // task#9
 // let calc = (value) => {
 //   let c = 0;
@@ -111,14 +111,24 @@ console.log(largestSwap(53));
 // console.log(maxNum(7182));
 
 //  task#14
-function isSymmetrical(num) {
-  let c = "";
-  for (let i = num; i >= 1; parseInt((i /= 10))) {
-    c += parseInt(i % 10);
-  }
-  return c == num ? true : false;
-}
-console.log(isSymmetrical(7227));
+// function isSymmetrical(num) {
+//   let c = "";
+//   for (let i = num; i >= 1; parseInt((i /= 10))) {
+//     c += parseInt(i % 10);
+//   }
+//   return c == num ? true : false;
+// }
+// console.log(isSymmetrical(7227));
 //  task#15
 
-// unsolved
+let addDigits = (num) => {
+  let c = 0;
+  for (let i = num; i >= 1; parseInt((i /= 10))) {
+    c = parseInt(i % 10) + parseInt((i /= 10));
+    if (c > 9) {
+      c = parseInt(c % 10) + parseInt(c / 10);
+    }
+  }
+  return c;
+};
+console.log(addDigits(38));
