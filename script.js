@@ -97,21 +97,28 @@
 // console.log(sum(4, 3));
 
 // task#13
-let maxNum = function (num) {
-  let c = 0;
-  let max = -1;
-  for (let i = num; i >= 1; parseInt((i /= 10))) {
-    c = parseInt(i % 10);
-    if (c > max) {
-      max = c;
-    }
-  }
-  return max;
-};
-console.log(maxNum(7182));
+// let maxNum = function (num) {
+//   let c = 0;
+//   let max = -1;
+//   for (let i = num; i >= 1; parseInt((i /= 10))) {
+//     c = parseInt(i % 10);
+//     if (c > max) {
+//       max = c;
+//     }
+//   }
+//   return max;
+// };
+// console.log(maxNum(7182));
 
 //  task#14
-
+function isSymmetrical(num) {
+  let c = "";
+  for (let i = num; i >= 1; parseInt((i /= 10))) {
+    c += parseInt(i % 10);
+  }
+  return c == num ? true : false;
+}
+console.log(isSymmetrical(7227));
 //  task#15
 
 // unsolved
