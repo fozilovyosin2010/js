@@ -43,15 +43,15 @@
 // same(8, 1, 0);
 
 // task#8
-let largestSwap = function (number) {
-  let c = "";
-  for (let i = number; i >= 1; parseInt((i /= 10))) {
-    c += parseInt(i % 10);
-  }
-  return c < number ? true : false;
-};
-console.log(largestSwap(53));
-// // task#9
+// let largestSwap = function (number) {
+//   let c = "";
+//   for (let i = number; i >= 1; parseInt((i /= 10))) {
+//     c += parseInt(i % 10);
+//   }
+//   return c < number ? true : false;
+// };
+// console.log(largestSwap(53));
+// task#9
 // let calc = (value) => {
 //   let c = 0;
 //   for (let i = 0; i <= value; i++) {
@@ -60,7 +60,7 @@ console.log(largestSwap(53));
 //   return c;
 // };
 // console.log(calc(5));
-// // task#10
+// task#10
 // function deference(a, b, c) {
 //   console.log(a && b !== c ? c : b && c !== a ? a : a && c !== b ? b : null);
 // }
@@ -97,20 +97,19 @@ console.log(largestSwap(53));
 // console.log(sum(4, 3));
 
 // task#13
-// console.log(maxNum(7192));
-// function maxNum(num) {
-//   let max = -12312312,
-//     sum = 0;
+let maxNum = function (num) {
+  let c = 0;
+  let max = -1;
+  for (let i = num; i >= 1; parseInt((i /= 10))) {
+    c = parseInt(i % 10);
+    if (c > max) {
+      max = c;
+    }
+  }
+  return max;
+};
+console.log(maxNum(7182));
 
-//   for (let i = num; i >= 1; parseInt((i /= 10))) {
-//     sum = parseInt(i % 10);
-//     if (sum > max) {
-//       max = sum;
-//     }
-//   }
-
-//   return max;
-// }
 //  task#14
 
 //  task#15
